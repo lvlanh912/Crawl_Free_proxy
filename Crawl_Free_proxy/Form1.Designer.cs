@@ -33,18 +33,19 @@
             this.panel4 = new System.Windows.Forms.Panel();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.txtsocks5 = new System.Windows.Forms.Label();
+            this.txts5 = new System.Windows.Forms.TextBox();
+            this.lbs5 = new System.Windows.Forms.Label();
             this.panel5 = new System.Windows.Forms.Panel();
             this.panel6 = new System.Windows.Forms.Panel();
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.txtsocks4 = new System.Windows.Forms.TextBox();
-            this.label5 = new System.Windows.Forms.Label();
+            this.lbs4 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.txthttp = new System.Windows.Forms.TextBox();
+            this.lbhttp = new System.Windows.Forms.Label();
+            this.btnStart = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.btnstart = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel4.SuspendLayout();
@@ -66,8 +67,8 @@
             // panel3
             // 
             this.panel3.Controls.Add(this.panel4);
-            this.panel3.Controls.Add(this.textBox2);
-            this.panel3.Controls.Add(this.txtsocks5);
+            this.panel3.Controls.Add(this.txts5);
+            this.panel3.Controls.Add(this.lbs5);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel3.Location = new System.Drawing.Point(581, 0);
             this.panel3.Name = "panel3";
@@ -103,30 +104,30 @@
             this.label3.TabIndex = 0;
             this.label3.Text = "Http";
             // 
-            // textBox2
+            // txts5
             // 
-            this.textBox2.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.textBox2.Location = new System.Drawing.Point(0, 23);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(291, 418);
-            this.textBox2.TabIndex = 1;
+            this.txts5.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.txts5.Location = new System.Drawing.Point(0, 23);
+            this.txts5.Multiline = true;
+            this.txts5.Name = "txts5";
+            this.txts5.Size = new System.Drawing.Size(291, 418);
+            this.txts5.TabIndex = 1;
             // 
-            // txtsocks5
+            // lbs5
             // 
-            this.txtsocks5.AutoSize = true;
-            this.txtsocks5.Dock = System.Windows.Forms.DockStyle.Top;
-            this.txtsocks5.Location = new System.Drawing.Point(0, 0);
-            this.txtsocks5.Name = "txtsocks5";
-            this.txtsocks5.Size = new System.Drawing.Size(52, 20);
-            this.txtsocks5.TabIndex = 0;
-            this.txtsocks5.Text = "socks5";
+            this.lbs5.AutoSize = true;
+            this.lbs5.Dock = System.Windows.Forms.DockStyle.Top;
+            this.lbs5.Location = new System.Drawing.Point(0, 0);
+            this.lbs5.Name = "lbs5";
+            this.lbs5.Size = new System.Drawing.Size(52, 20);
+            this.lbs5.TabIndex = 0;
+            this.lbs5.Text = "socks5";
             // 
             // panel5
             // 
             this.panel5.Controls.Add(this.panel6);
             this.panel5.Controls.Add(this.txtsocks4);
-            this.panel5.Controls.Add(this.label5);
+            this.panel5.Controls.Add(this.lbs4);
             this.panel5.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel5.Location = new System.Drawing.Point(290, 0);
             this.panel5.Name = "panel5";
@@ -171,20 +172,20 @@
             this.txtsocks4.Size = new System.Drawing.Size(291, 418);
             this.txtsocks4.TabIndex = 1;
             // 
-            // label5
+            // lbs4
             // 
-            this.label5.AutoSize = true;
-            this.label5.Dock = System.Windows.Forms.DockStyle.Top;
-            this.label5.Location = new System.Drawing.Point(0, 0);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(52, 20);
-            this.label5.TabIndex = 0;
-            this.label5.Text = "socks4";
+            this.lbs4.AutoSize = true;
+            this.lbs4.Dock = System.Windows.Forms.DockStyle.Top;
+            this.lbs4.Location = new System.Drawing.Point(0, 0);
+            this.lbs4.Name = "lbs4";
+            this.lbs4.Size = new System.Drawing.Size(52, 20);
+            this.lbs4.TabIndex = 0;
+            this.lbs4.Text = "socks4";
             // 
             // panel2
             // 
             this.panel2.Controls.Add(this.txthttp);
-            this.panel2.Controls.Add(this.label1);
+            this.panel2.Controls.Add(this.lbhttp);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Name = "panel2";
@@ -200,32 +201,42 @@
             this.txthttp.Size = new System.Drawing.Size(290, 418);
             this.txthttp.TabIndex = 1;
             // 
+            // lbhttp
+            // 
+            this.lbhttp.AutoSize = true;
+            this.lbhttp.Dock = System.Windows.Forms.DockStyle.Top;
+            this.lbhttp.Location = new System.Drawing.Point(0, 0);
+            this.lbhttp.Name = "lbhttp";
+            this.lbhttp.Size = new System.Drawing.Size(39, 20);
+            this.lbhttp.TabIndex = 0;
+            this.lbhttp.Text = "Http";
+            // 
+            // btnStart
+            // 
+            this.btnStart.Location = new System.Drawing.Point(406, 34);
+            this.btnStart.Name = "btnStart";
+            this.btnStart.Size = new System.Drawing.Size(94, 29);
+            this.btnStart.TabIndex = 1;
+            this.btnStart.Text = "Start";
+            this.btnStart.UseVisualStyleBackColor = true;
+            this.btnStart.Click += new System.EventHandler(this.btnStart_Click);
+            // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.label1.Location = new System.Drawing.Point(0, 0);
+            this.label1.Location = new System.Drawing.Point(409, 84);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(39, 20);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Http";
-            // 
-            // btnstart
-            // 
-            this.btnstart.Location = new System.Drawing.Point(406, 34);
-            this.btnstart.Name = "btnstart";
-            this.btnstart.Size = new System.Drawing.Size(94, 29);
-            this.btnstart.TabIndex = 1;
-            this.btnstart.Text = "Start";
-            this.btnstart.UseVisualStyleBackColor = true;
-            this.btnstart.Click += new System.EventHandler(this.btnstart_Click);
+            this.label1.Size = new System.Drawing.Size(50, 20);
+            this.label1.TabIndex = 2;
+            this.label1.Text = "label1";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(875, 567);
-            this.Controls.Add(this.btnstart);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.btnStart);
             this.Controls.Add(this.panel1);
             this.Name = "Form1";
             this.Text = "Form1";
@@ -241,6 +252,7 @@
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -251,17 +263,18 @@
         private Panel panel4;
         private TextBox textBox3;
         private Label label3;
-        private TextBox textBox2;
-        private Label txtsocks5;
+        private TextBox txts5;
+        private Label lbs5;
         private Panel panel5;
         private Panel panel6;
         private TextBox textBox4;
         private Label label4;
         private TextBox txtsocks4;
-        private Label label5;
+        private Label lbs4;
         private Panel panel2;
         private TextBox txthttp;
+        private Label lbhttp;
+        private Button btnStart;
         private Label label1;
-        private Button btnstart;
     }
 }
