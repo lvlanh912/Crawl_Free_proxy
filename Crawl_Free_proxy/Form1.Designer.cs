@@ -46,6 +46,8 @@
             this.lbhttp = new System.Windows.Forms.Label();
             this.btnStart = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
+            this.txtpage = new System.Windows.Forms.TextBox();
+            this.txtmax = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel4.SuspendLayout();
@@ -230,11 +232,29 @@
             this.label1.TabIndex = 2;
             this.label1.Text = "label1";
             // 
+            // txtpage
+            // 
+            this.txtpage.Location = new System.Drawing.Point(671, 34);
+            this.txtpage.Name = "txtpage";
+            this.txtpage.Size = new System.Drawing.Size(49, 27);
+            this.txtpage.TabIndex = 3;
+            this.txtpage.Text = "1";
+            // 
+            // txtmax
+            // 
+            this.txtmax.Location = new System.Drawing.Point(752, 34);
+            this.txtmax.Name = "txtmax";
+            this.txtmax.Size = new System.Drawing.Size(49, 27);
+            this.txtmax.TabIndex = 4;
+            this.txtmax.Text = "700";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(875, 567);
+            this.Controls.Add(this.txtmax);
+            this.Controls.Add(this.txtpage);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnStart);
             this.Controls.Add(this.panel1);
@@ -276,5 +296,7 @@
         private Label lbhttp;
         private Button btnStart;
         private Label label1;
+        private TextBox txtpage;
+        private TextBox txtmax;
     }
 }

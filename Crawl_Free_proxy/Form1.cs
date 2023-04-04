@@ -11,15 +11,15 @@ namespace Crawl_Free_proxy
 
         private void btnStart_Click(object sender, EventArgs e)
         {
-            ReadFileAsync();
+            ReadFileAsync(int.Parse(txtpage.Text), int.Parse(txtmax.Text));
         }
-        private async void ReadFileAsync()
+        private async void ReadFileAsync(int page,int max)
         {
             var task = Task.Run(() => {
                 using (var client= new RestClient())
                 {
                     UpdateStatus("Đang tải peoxy...");
-                    var rq = new RestRequest("https://proxylist.geonode.com/api/proxy-list?limit=500&page=1&sort_by=lastChecked&sort_type=desc", Method.Get);
+                    var rq = new RestRequest($"https://proxylist.geonode.com/api/proxy-list?limit={max}&page={page}&sort_by=lastChecked&sort_type=desc", Method.Get);
                     var respone= client.ExecuteGet(rq);
                     Root? data =JsonConvert.DeserializeObject<Root>(respone.Content??"");
                     UpdateStatus("Đang phân loại proxy...");
